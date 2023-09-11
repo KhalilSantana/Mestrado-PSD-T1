@@ -30,7 +30,7 @@ BEGIN
     '0';
   o_REQ_2 <= '1' WHEN (i_REQ_0 = '0' AND i_REQ_1 = '0' AND i_REQ_2 = '1') ELSE
     '0';
-  o_REQ_3 <= '1' WHEN (i_REQ_0 = '0' AND i_REQ_1 = '0' AND i_REQ_2 = '1' AND i_REQ_3 = '1') ELSE
+  o_REQ_3 <= '1' WHEN (i_REQ_0 = '0' AND i_REQ_1 = '0' AND i_REQ_2 = '0' AND i_REQ_3 = '1') ELSE
     '0';
   --   END PROCESS;
 END ARCHITECTURE;
