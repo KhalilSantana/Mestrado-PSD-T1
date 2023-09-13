@@ -3,43 +3,43 @@
 -- Atividade  : Avaliação 1 - Projeto de Circuitos Combinacionais usando VHDL
 -- Alunos     : Khalil G. Q. de Santana, Alission Boeing
 
-LIBRARY ieee;
-USE ieee.std_logic_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
 
-ENTITY circuito6 IS
-  PORT (
-    -- Input requests
-    i_REQ_0 : IN std_logic;
-    i_REQ_1 : IN std_logic;
-    i_REQ_2 : IN std_logic;
-    i_REQ_3 : IN std_logic;
-    -- Output resutlts
-    o_REQ : OUT std_logic_vector(1 DOWNTO 0);
-    o_ON  : OUT std_logic
-  );
-END ENTITY;
+entity circuito6 is
+ port (
+  -- Input requests
+  i_REQ_0 : in std_logic;
+  i_REQ_1 : in std_logic;
+  i_REQ_2 : in std_logic;
+  i_REQ_3 : in std_logic;
+  -- Output resutlts
+  o_REQ : out std_logic_vector(1 downto 0);
+  o_ON  : out std_logic
+ );
+end entity;
 
-ARCHITECTURE arch_1 OF circuito6 IS
-  COMPONENT circuito5 IS
-    PORT (
-      -- Input requests
-      i_REQ_0 : IN std_logic;
-      i_REQ_1 : IN std_logic;
-      i_REQ_2 : IN std_logic;
-      i_REQ_3 : IN std_logic;
-      -- Output resutlts
-      o_REQ : OUT std_logic_vector(1 DOWNTO 0)
-    );
-  END COMPONENT;
-BEGIN
-  u_circ5 : circuito5 PORT MAP(
-    i_REQ_0 => i_REQ_0,
-    i_REQ_1 => i_REQ_1,
-    i_REQ_2 => i_REQ_2,
-    i_REQ_3 => i_REQ_3,
-    --
-    o_REQ => o_REQ
+architecture arch_1 of circuito6 is
+ component circuito5 is
+  port (
+   -- Input requests
+   i_REQ_0 : in std_logic;
+   i_REQ_1 : in std_logic;
+   i_REQ_2 : in std_logic;
+   i_REQ_3 : in std_logic;
+   -- Output resutlts
+   o_REQ : out std_logic_vector(1 downto 0)
   );
-  o_ON <= '1' WHEN (i_REQ_0 = '1' OR i_REQ_1 = '1' OR i_REQ_2 = '1' OR i_REQ_3 = '1') ELSE
-    '0';
-END ARCHITECTURE;
+ end component;
+begin
+ u_circ5 : circuito5 port map(
+  i_REQ_0 => i_REQ_0,
+  i_REQ_1 => i_REQ_1,
+  i_REQ_2 => i_REQ_2,
+  i_REQ_3 => i_REQ_3,
+  --
+  o_REQ => o_REQ
+ );
+ o_ON <= '1' when (i_REQ_0 = '1' or i_REQ_1 = '1' or i_REQ_2 = '1' or i_REQ_3 = '1') else
+  '0';
+end architecture;
