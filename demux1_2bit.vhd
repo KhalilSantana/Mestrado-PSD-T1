@@ -18,12 +18,7 @@ ARCHITECTURE arch_1 OF demux1_2bit IS
 BEGIN
   PROCESS (i_SEL, i_A)
   BEGIN
-    IF (i_SEL = '0') THEN 
-      o_S1 <= i_A;
-      o_S2 <= '0';
-    ELSE
-      o_S1 <= '0';
-      o_S2 <= i_A;
-    END IF;
+	o_S1 <= i_A and (not i_SEL);
+	o_S2 <= i_A and i_SEL;
   END PROCESS;
 END ARCHITECTURE;
