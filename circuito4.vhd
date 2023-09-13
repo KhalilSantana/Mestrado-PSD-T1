@@ -3,34 +3,34 @@
 -- Atividade  : Avaliação 1 - Projeto de Circuitos Combinacionais usando VHDL
 -- Alunos     : Khalil G. Q. de Santana, Alission Boeing
 
-LIBRARY ieee;
-USE ieee.std_logic_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
 
-ENTITY circuito4 IS
-  PORT (
-    -- Input requests
-    i_REQ_0 : IN std_logic;
-    i_REQ_1 : IN std_logic;
-    i_REQ_2 : IN std_logic;
-    i_REQ_3 : IN std_logic;
-    -- Output resutlts
-    o_REQ_0 : OUT std_logic;
-    o_REQ_1 : OUT std_logic;
-    o_REQ_2 : OUT std_logic;
-    o_REQ_3 : OUT std_logic
-  );
-END ENTITY;
+entity circuito4 is
+ port (
+  -- Input requests
+  i_REQ_0 : in std_logic;
+  i_REQ_1 : in std_logic;
+  i_REQ_2 : in std_logic;
+  i_REQ_3 : in std_logic;
+  -- Output resutlts
+  o_REQ_0 : out std_logic;
+  o_REQ_1 : out std_logic;
+  o_REQ_2 : out std_logic;
+  o_REQ_3 : out std_logic
+ );
+end entity;
 
-ARCHITECTURE arch_1 OF circuito4 IS
-BEGIN
-  --   PROCESS (i_REQ_0, i_REQ_1, i_REQ_2, i_REQ_3)
-  --   BEGIN
-  o_REQ_0 <= i_REQ_0;
-  o_REQ_1 <= '1' WHEN (i_REQ_0 = '0' AND i_REQ_1 = '1') ELSE
-    '0';
-  o_REQ_2 <= '1' WHEN (i_REQ_0 = '0' AND i_REQ_1 = '0' AND i_REQ_2 = '1') ELSE
-    '0';
-  o_REQ_3 <= '1' WHEN (i_REQ_0 = '0' AND i_REQ_1 = '0' AND i_REQ_2 = '0' AND i_REQ_3 = '1') ELSE
-    '0';
-  --   END PROCESS;
-END ARCHITECTURE;
+architecture arch_1 of circuito4 is
+begin
+ --   PROCESS (i_REQ_0, i_REQ_1, i_REQ_2, i_REQ_3)
+ --   BEGIN
+ o_REQ_0 <= i_REQ_0;
+ o_REQ_1 <= '1' when (i_REQ_0 = '0' and i_REQ_1 = '1') else
+  '0';
+ o_REQ_2 <= '1' when (i_REQ_0 = '0' and i_REQ_1 = '0' and i_REQ_2 = '1') else
+  '0';
+ o_REQ_3 <= '1' when (i_REQ_0 = '0' and i_REQ_1 = '0' and i_REQ_2 = '0' and i_REQ_3 = '1') else
+  '0';
+ --   END PROCESS;
+end architecture;

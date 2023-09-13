@@ -3,22 +3,22 @@
 -- Atividade  : Avaliação 1 - Projeto de Circuitos Combinacionais usando VHDL
 -- Alunos     : Khalil G. Q. de Santana, Alission Boeing
 
-LIBRARY ieee;
-USE ieee.std_logic_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
 
-ENTITY demux1_2bit IS
-  PORT (
-    i_SEL : IN std_logic;   -- selector
-    i_A   : IN std_logic;   -- data input
-    o_S1  : OUT std_logic;  -- data output1
-    o_S2  : OUT std_logic); -- data output2
-END ENTITY;
+entity demux1_2bit is
+ port (
+  i_SEL : in std_logic;   -- selector
+  i_A   : in std_logic;   -- data input
+  o_S1  : out std_logic;  -- data output1
+  o_S2  : out std_logic); -- data output2
+end entity;
 
-ARCHITECTURE arch_1 OF demux1_2bit IS
-BEGIN
-  PROCESS (i_SEL, i_A)
-  BEGIN
-	o_S1 <= i_A and (not i_SEL);
-	o_S2 <= i_A and i_SEL;
-  END PROCESS;
-END ARCHITECTURE;
+architecture arch_1 of demux1_2bit is
+begin
+ process (i_SEL, i_A)
+ begin
+  o_S1 <= i_A and (not i_SEL);
+  o_S2 <= i_A and i_SEL;
+ end process;
+end architecture;
