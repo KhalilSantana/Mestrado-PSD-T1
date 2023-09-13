@@ -1,7 +1,7 @@
 -- Circuito6/circuito6.vhd
 -- Disciplina : Projeto de Sistemas Digitais
 -- Atividade  : Avaliação 1 - Projeto de Circuitos Combinacionais usando VHDL
--- Alunos     : Khalil G. Q. de Santana, Alission Boeing
+-- Alunos     : Khalil G. Q. de Santana, Alisson Boeing
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
