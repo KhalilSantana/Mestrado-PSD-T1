@@ -58,84 +58,84 @@ BEGIN
     w_i_REQ_2 <= '1';
     w_i_REQ_3 <= '0';
     WAIT FOR 1 ns;
-    ASSERT((w_o_REQ_0 = '0') and (w_o_REQ_1 = '0')  and (w_o_REQ_2 = '1')  and (w_o_REQ_3 = '0')) REPORT "Fail @ 0001" SEVERITY error;
+    ASSERT((w_o_REQ_0 = '0') and (w_o_REQ_1 = '0')  and (w_o_REQ_2 = '1')  and (w_o_REQ_3 = '0')) REPORT "Fail @ 0010" SEVERITY error;
 
 	 w_i_REQ_0 <= '0';
 	 w_i_REQ_1 <= '0';
     w_i_REQ_2 <= '1';
     w_i_REQ_3 <= '1';
     WAIT FOR 1 ns;
-    ASSERT((w_o_REQ_0 = '0') and (w_o_REQ_1 = '0')  and (w_o_REQ_2 = '1')  and (w_o_REQ_3 = '0')) REPORT "Fail @ 0001" SEVERITY error;
+    ASSERT((w_o_REQ_0 = '0') and (w_o_REQ_1 = '0')  and (w_o_REQ_2 = '1')  and (w_o_REQ_3 = '0')) REPORT "Fail @ 0011" SEVERITY error;
 
     w_i_REQ_0 <= '0';
 	 w_i_REQ_1 <= '1';
     w_i_REQ_2 <= '0';
     w_i_REQ_3 <= '0';
     WAIT FOR 1 ns;
-    ASSERT((w_o_REQ_0 = '0') and (w_o_REQ_1 = '1')  and (w_o_REQ_2 = '0')  and (w_o_REQ_3 = '0')) REPORT "Fail @ 0001" SEVERITY error;
+    ASSERT((w_o_REQ_0 = '0') and (w_o_REQ_1 = '1')  and (w_o_REQ_2 = '0')  and (w_o_REQ_3 = '0')) REPORT "Fail @ 0100" SEVERITY error;
 
 	 w_i_REQ_0 <= '0';
 	 w_i_REQ_1 <= '1';
     w_i_REQ_2 <= '0';
     w_i_REQ_3 <= '1';
     WAIT FOR 1 ns;
-    ASSERT((w_o_REQ_0 = '0') and (w_o_REQ_1 = '1')  and (w_o_REQ_2 = '0')  and (w_o_REQ_3 = '0')) REPORT "Fail @ 0001" SEVERITY error;
+    ASSERT((w_o_REQ_0 = '0') and (w_o_REQ_1 = '1')  and (w_o_REQ_2 = '0')  and (w_o_REQ_3 = '0')) REPORT "Fail @ 0101" SEVERITY error;
 
 	 w_i_REQ_0 <= '0';
 	 w_i_REQ_1 <= '1';
     w_i_REQ_2 <= '1';
     w_i_REQ_3 <= '0';
     WAIT FOR 1 ns;
-    ASSERT((w_o_REQ_0 = '0') and (w_o_REQ_1 = '1')  and (w_o_REQ_2 = '0')  and (w_o_REQ_3 = '0')) REPORT "Fail @ 0001" SEVERITY error;
+    ASSERT((w_o_REQ_0 = '0') and (w_o_REQ_1 = '1')  and (w_o_REQ_2 = '0')  and (w_o_REQ_3 = '0')) REPORT "Fail @ 0110" SEVERITY error;
 
 	 w_i_REQ_0 <= '0';
 	 w_i_REQ_1 <= '1';
     w_i_REQ_2 <= '1';
     w_i_REQ_3 <= '1';
     WAIT FOR 1 ns;
-    ASSERT((w_o_REQ_0 = '0') and (w_o_REQ_1 = '1')  and (w_o_REQ_2 = '0')  and (w_o_REQ_3 = '0')) REPORT "Fail @ 0001" SEVERITY error;
+    ASSERT((w_o_REQ_0 = '0') and (w_o_REQ_1 = '1')  and (w_o_REQ_2 = '0')  and (w_o_REQ_3 = '0')) REPORT "Fail @ 0111" SEVERITY error;
 
 	 w_i_REQ_0 <= '1';
 	 w_i_REQ_1 <= '0';
     w_i_REQ_2 <= '0';
     w_i_REQ_3 <= '0';
     WAIT FOR 1 ns;
-    ASSERT((w_o_REQ_0 = '1') and (w_o_REQ_1 = '0')  and (w_o_REQ_2 = '0')  and (w_o_REQ_3 = '0')) REPORT "Fail @ 0001" SEVERITY error;
+    ASSERT((w_o_REQ_0 = '1') and (w_o_REQ_1 = '0')  and (w_o_REQ_2 = '0')  and (w_o_REQ_3 = '0')) REPORT "Fail @ 1000" SEVERITY error;
 
 	 w_i_REQ_0 <= '1';
 	 w_i_REQ_1 <= '0';
     w_i_REQ_2 <= '0';
     w_i_REQ_3 <= '1';
     WAIT FOR 1 ns;
-    ASSERT((w_o_REQ_0 = '1') and (w_o_REQ_1 = '0')  and (w_o_REQ_2 = '0')  and (w_o_REQ_3 = '0')) REPORT "Fail @ 0001" SEVERITY error;
+    ASSERT((w_o_REQ_0 = '1') and (w_o_REQ_1 = '0')  and (w_o_REQ_2 = '0')  and (w_o_REQ_3 = '0')) REPORT "Fail @ 1001" SEVERITY error;
 
 	 w_i_REQ_0 <= '1';
 	 w_i_REQ_1 <= '0';
     w_i_REQ_2 <= '1';
     w_i_REQ_3 <= '0';
     WAIT FOR 1 ns;
-    ASSERT((w_o_REQ_0 = '1') and (w_o_REQ_1 = '0')  and (w_o_REQ_2 = '0')  and (w_o_REQ_3 = '0')) REPORT "Fail @ 0001" SEVERITY error;
+    ASSERT((w_o_REQ_0 = '1') and (w_o_REQ_1 = '0')  and (w_o_REQ_2 = '0')  and (w_o_REQ_3 = '0')) REPORT "Fail @ 1010" SEVERITY error;
 
 	 w_i_REQ_0 <= '1';
 	 w_i_REQ_1 <= '0';
     w_i_REQ_2 <= '1';
     w_i_REQ_3 <= '1';
     WAIT FOR 1 ns;
-    ASSERT((w_o_REQ_0 = '1') and (w_o_REQ_1 = '0')  and (w_o_REQ_2 = '0')  and (w_o_REQ_3 = '0')) REPORT "Fail @ 0001" SEVERITY error;
+    ASSERT((w_o_REQ_0 = '1') and (w_o_REQ_1 = '0')  and (w_o_REQ_2 = '0')  and (w_o_REQ_3 = '0')) REPORT "Fail @ 1011" SEVERITY error;
 
 	 w_i_REQ_0 <= '1';
 	 w_i_REQ_1 <= '1';
     w_i_REQ_2 <= '0';
     w_i_REQ_3 <= '0';
     WAIT FOR 1 ns;
-    ASSERT((w_o_REQ_0 = '1') and (w_o_REQ_1 = '0')  and (w_o_REQ_2 = '0')  and (w_o_REQ_3 = '0')) REPORT "Fail @ 0001" SEVERITY error;
+    ASSERT((w_o_REQ_0 = '1') and (w_o_REQ_1 = '0')  and (w_o_REQ_2 = '0')  and (w_o_REQ_3 = '0')) REPORT "Fail @ 1100" SEVERITY error;
 
 	 w_i_REQ_0 <= '1';
 	 w_i_REQ_1 <= '1';
     w_i_REQ_2 <= '0';
     w_i_REQ_3 <= '1';
     WAIT FOR 1 ns;
-    ASSERT((w_o_REQ_0 = '1') and (w_o_REQ_1 = '0')  and (w_o_REQ_2 = '0')  and (w_o_REQ_3 = '0')) REPORT "Fail @ 0001" SEVERITY error;
+    ASSERT((w_o_REQ_0 = '1') and (w_o_REQ_1 = '0')  and (w_o_REQ_2 = '0')  and (w_o_REQ_3 = '0')) REPORT "Fail @ 1101" SEVERITY error;
 
 	 
 	 w_i_REQ_0 <= '1';
@@ -143,14 +143,14 @@ BEGIN
     w_i_REQ_2 <= '1';
     w_i_REQ_3 <= '0';
     WAIT FOR 1 ns;
-    ASSERT((w_o_REQ_0 = '1') and (w_o_REQ_1 = '0')  and (w_o_REQ_2 = '0')  and (w_o_REQ_3 = '0')) REPORT "Fail @ 0001" SEVERITY error;
+    ASSERT((w_o_REQ_0 = '1') and (w_o_REQ_1 = '0')  and (w_o_REQ_2 = '0')  and (w_o_REQ_3 = '0')) REPORT "Fail @ 1110" SEVERITY error;
 
 	 w_i_REQ_0 <= '1';
 	 w_i_REQ_1 <= '1';
     w_i_REQ_2 <= '1';
     w_i_REQ_3 <= '1';
     WAIT FOR 1 ns;
-    ASSERT((w_o_REQ_0 = '1') and (w_o_REQ_1 = '0')  and (w_o_REQ_2 = '0')  and (w_o_REQ_3 = '0')) REPORT "Fail @ 0001" SEVERITY error;
+    ASSERT((w_o_REQ_0 = '1') and (w_o_REQ_1 = '0')  and (w_o_REQ_2 = '0')  and (w_o_REQ_3 = '0')) REPORT "Fail @ 1111" SEVERITY error;
 
 	 
     -- Clear inputs
