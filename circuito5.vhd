@@ -1,7 +1,7 @@
 -- Circuito5/circuito5.vhd
 -- Disciplina : Projeto de Sistemas Digitais
 -- Atividade  : Avaliação 1 - Projeto de Circuitos Combinacionais usando VHDL
--- Alunos     : Khalil G. Q. de Santana, Alission Boeing
+-- Alunos     : Khalil G. Q. de Santana, Alisson Boeing
 
 library ieee;
 use ieee.std_logic_1164.all;
