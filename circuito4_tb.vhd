@@ -49,6 +49,13 @@ BEGIN
     w_i_REQ_0 <= '0';
     w_i_REQ_1 <= '0';
     w_i_REQ_2 <= '0';
+    w_i_REQ_3 <= '0';
+	 WAIT FOR 1 ns;
+    ASSERT((w_o_REQ_0 = '0') and (w_o_REQ_1 = '0')  and (w_o_REQ_2 = '0')  and (w_o_REQ_3 = '0')) REPORT "Fail @ 0000" SEVERITY error;
+	 
+    w_i_REQ_0 <= '0';
+    w_i_REQ_1 <= '0';
+    w_i_REQ_2 <= '0';
     w_i_REQ_3 <= '1';
     WAIT FOR 1 ns;
     ASSERT((w_o_REQ_0 = '0') and (w_o_REQ_1 = '0')  and (w_o_REQ_2 = '0')  and (w_o_REQ_3 = '1')) REPORT "Fail @ 0001" SEVERITY error;
